@@ -3,3 +3,6 @@ A project learning about Kubernetes orchestration conduct using Minikube to perf
 
 Reference code:
 [https://github.com/scriptcamp/kubernetes-efk](https://github.com/dunkelbunt1/EFK-minikube)
+
+Kube-Prometheus:
+https://github.com/prometheus-operator/kube-prometheus
