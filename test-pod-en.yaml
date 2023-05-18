@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: counter
+spec:
+  containers:
+    - name: count
+      image: busybox
+      args:
+        [
+          /bin/sh,
+          -c,
+          'i=$COUNTER_START_VALUE; while true; do echo "Well done $i"; i=$((i+$COUNTER_STEP_SIZE)); sleep 1; done',
+        ]
+      env:
+        - name: COUNTER_START_VALUE
+          value: "0"
+        - name: COUNTER_STEP_SIZE
+          value: "1"
+      livenessProbe:
+        exec:
+          command:
+            - /bin/sh
+            - -c
+            - ps aux | grep '[b]in/sh -c i=$COUNTER_START_VALUE; while true; do echo "Thanks for visiting devopscube! $i"; i=$((i+$COUNTER_STEP_SIZE)); sleep 1; done'
+        initialDelaySeconds: 5
+        periodSeconds: 10
+      readinessProbe:
+        httpGet:
+          path: /healthz
+          port: 80
+        initialDelaySeconds: 3
+        periodSeconds: 5
