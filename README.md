@@ -6,3 +6,9 @@ Reference code:
 
 Kube-Prometheus:
 https://github.com/prometheus-operator/kube-prometheus
+
+Apache Jmeter:
+https://jmeter.apache.org/download_jmeter.cgi
+
+Related code for HPA:
+https://github.com/marcel-dempers/docker-development-youtube-series
