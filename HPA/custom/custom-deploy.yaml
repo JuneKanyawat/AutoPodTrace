@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: custom-app
+  labels:
+    app: custom-app
+spec:
+  selector:
+    matchLabels:
+      app: custom-app
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        app: custom-app
+    spec:
+      containers:
+      - name: custom-app
+        image: maofss/custom-m:v8
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080

@@ -1,0 +1,23 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  labels:
+    name: custom-app
+  name: custom-app-monitor
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: custom-app
+  endpoints:
+    - port: web
+      interval: 15s
+      metricRelabelings:
+        - sourceLabels: ['__name__']
+          regex: 'requests_total' 
+          action: keep
+      relabelings:
+        - sourceLabels: [namespace]
+          targetLabel: kubernetes_namespace
+        - sourceLabels: [pod]
+          targetLabel: kubernetes_pod_name

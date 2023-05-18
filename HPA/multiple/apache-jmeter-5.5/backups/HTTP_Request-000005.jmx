@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">20</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <stringProp name="ThreadGroup.duration">60</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">192.168.59.132</stringProp>
+          <stringProp name="HTTPSampler.port">31294</stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1802939963">
+Once upon a time in a whimsical land, there lived a rabbit named Fluffy. Fluffy was unlike any other rabbit because he had an insatiable love for candy. Among all the sweets in the world, his absolute favorite was a special candy called Moon Star.
+
+Moon Star candies were legendary for their enchanting flavors and mystical glow. They were said to be made from the essence of moonlight and stardust, making them not only delicious but also imbued with magical properties. Whenever Fluffy ate a Moon Star candy, he felt a surge of energy and joy that no other treat could provide.
+
+Fluffy&apos;s days revolved around his quest to find and devour as many Moon Star candies as possible. He hopped from candy shop to candy shop, exploring every nook and cranny in search of these delectable delights. His reputation as the &quot;Candy Connoisseur&quot; spread far and wide, and he became a legend among the woodland creatures.
+
+One sunny day, as Fluffy was scouring a meadow for a hidden stash of Moon Stars, he stumbled upon a small clearing where a wise old owl named Oliver resided. Oliver was known for his knowledge of the magical world and possessed a vast collection of mystical artifacts.
+
+Intrigued by Fluffy&apos;s unwavering passion for Moon Star candies, Oliver decided to assist the determined rabbit in his candy-fueled quest. With his vast wisdom, the owl guided Fluffy to the forgotten realm of Candyland, a magical land where sweets of all kinds were in abundance.
+
+As they entered Candyland, Fluffy&apos;s eyes widened with wonder. He was surrounded by towering candy cane trees, marshmallow clouds, and chocolate rivers that flowed with caramel. It was a paradise for any sweet tooth, and Fluffy felt like he had found his true home.
+
+But as they ventured deeper into Candyland, Fluffy realized that the Moon Star candies were nowhere to be found. Panic set in, and he feared that his beloved treat had become extinct. Determined to find an answer, Fluffy and Oliver sought the guidance of the Sugar Sorceress, the most powerful magical being in Candyland.
+
+The Sugar Sorceress revealed that the Moon Star candies had indeed disappeared from Candyland. She explained that the candies&apos; magical properties had caused an unforeseen disruption in the delicate balance of the candy realm, and they had been hidden away to protect the land from chaos.
+
+However, the Sugar Sorceress saw the purity of Fluffy&apos;s love for Moon Star candies and decided to grant him a chance to bring them back. She tasked Fluffy and Oliver with a perilous journey to collect the scattered fragments of moonlight and stardust across various candy-themed realms.
+
+Armed with determination and guided by Oliver&apos;s wisdom, Fluffy embarked on a grand adventure. They traversed mountains of cotton candy, sailed across sparkling soda seas, and braved treacherous licorice forests. Each realm presented its own challenges and puzzles that Fluffy had to overcome.
+
+With every fragment of moonlight and stardust they collected, Fluffy&apos;s hope grew stronger. He knew that each piece brought him closer to restoring the Moon Star candies and preserving the harmony of Candyland.
+
+Finally, after countless trials and tribulations, Fluffy and Oliver stood before the Sugar Sorceress once again. With the collected fragments, she performed a magnificent ritual that reassembled the Moon Star candies, returning them to their former glory.
+
+Overjoyed, Fluffy thanked the Sugar Sorceress and bid farewell to Candyland. Armed with a lifetime supply of Moon Star candies, he returned to his woodland home, where he shared the magic and joy of his beloved treats with all the creatures.
+
+From that day forward, Fluffy became more than just the Candy</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="755167396">One sunny day, as Fluffy was scouring a meadow for a hidden stash of Moon Stars, he stumbled upon a small clearing where a wise old owl named Oliver resided. Oliver was known for his knowledge of the magical world and possessed a vast collection of mystical artifacts.</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="-627524491">Intrigued by Fluffy&apos;s unwavering passion for Moon Star candies, Oliver decided to assist the determined rabbit in his candy-fueled quest. With his vast wisdom, the owl guided Fluffy to the forgotten realm of Candyland, a magical land where sweets of all kinds were in abundance.</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1197993185">As they entered Candyland, Fluffy&apos;s eyes widened with wonder. He was surrounded by towering candy cane trees, marshmallow clouds, and chocolate rivers that flowed with caramel. It was a paradise for any sweet tooth, and Fluffy felt like he had found his true home.</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="-1494957902">But as they ventured deeper into Candyland, Fluffy realized that the Moon Star candies were nowhere to be found. Panic set in, and he feared that his beloved treat had become extinct. Determined to find an answer, Fluffy and Oliver sought the guidance of the Sugar Sorceress, the most powerful magical being in Candyland.</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="-721881418">The Sugar Sorceress revealed that the Moon Star candies had indeed disappeared from Candyland. She explained that the candies&apos; magical properties had caused an unforeseen disruption in the delicate balance of the candy realm, and they had been hidden away to protect the land from chaos.</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="-570133636">However, the Sugar Sorceress saw the purity of Fluffy&apos;s love for Moon Star candies and decided to grant him a chance to bring them back. She tasked Fluffy and Oliver with a perilous journey to collect the scattered fragments of moonlight and stardust across various candy-themed realms.</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="350345862">Armed with determination and guided by Oliver&apos;s wisdom, Fluffy embarked on a grand adventure. They traversed mountains of cotton candy, sailed across sparkling soda seas, and braved treacherous licorice forests. Each realm presented its own challenges and puzzles that Fluffy had to overcome.</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="1310656128">With every fragment of moonlight and stardust they collected, Fluffy&apos;s hope grew stronger. He knew that each piece brought him closer to restoring the Moon Star candies and preserving the harmony of Candyland.</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="-1956320022">Finally, after countless trials and tribulations, Fluffy and Oliver stood before the Sugar Sorceress once again. With the collected fragments, she performed a magnificent ritual that reassembled the Moon Star candies, returning them to their former glory.</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="-1642324923">Overjoyed, Fluffy thanked the Sugar Sorceress and bid farewell to Candyland. Armed with a lifetime supply of Moon Star candies, he returned to his woodland home, where he shared the magic and joy of his beloved treats with all the creatures.</stringProp>
+              <stringProp name="0"></stringProp>
+              <stringProp name="-150034951">From that day forward, Fluffy became more than just the Candy</stringProp>
+              <stringProp name="0"></stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+            <stringProp name="Assertion.scope">all</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
